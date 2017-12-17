@@ -9,28 +9,24 @@
 	<div class="container">
 		<div class="item-list">
 			<div class="item">
-				<h1 class="title">Title 1</h1>
-				<span class="close">x</span>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p>
+				<div class="header" id="toggleContent">
+				<h1 class="title">Title 1 <button class="close" onclick="closeItem(this)">X</button></h1>
+				</div>
+				<div id="content">	
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p>
+				</div>
 			</div>
 			<div class="item">
-				<h1 class="title">Title 2</h1>
-				<span class="close">x</span>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p>
+				<div class="header" id="toggleContent">
+				<h1 class="title">Title 1 <button class="close" onclick="closeItem(this)">X</button></h1>
+				</div>
+				<div id="content">	
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p>
+				</div>
 			</div>
-			<div class="item">
-				<h1 class="title">Title 3</h1>
-				<span class="close">x</span>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p>
-			</div>
-			<div class="item">
-				<h1 class="title">Title 4</h1>
-				<span class="close">x</span>
-				<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id scelerisque lacus, rutrum lobortis nisl. Ut dapibus, quam in auctor pharetra, nibh erat pharetra velit, vitae tristique mauris dui quis.</p>
-			</div>
-		</div>
 		<input type="text" name="newtitle" id="newtitle">
-		<button class="add">Add New</button>
+		<button class="add" id="addItem" >Add New</button>
+		</div>
 	</div>	
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
